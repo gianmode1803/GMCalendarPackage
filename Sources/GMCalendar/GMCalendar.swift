@@ -161,7 +161,7 @@ public class GMCalendar: UIView {
             monthHeader = 0
         }
         addHeaders()
-        addDays()
+        //addDays()
         if self.horizontalSwipe{
             addHorizontalSwipe()
         }
