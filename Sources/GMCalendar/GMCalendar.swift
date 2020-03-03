@@ -161,7 +161,7 @@ public class GMCalendar: UIView {
             monthHeader = 0
         }
         addHeaders()
-        //addDays()
+        addDays()
         if self.horizontalSwipe{
             addHorizontalSwipe()
         }
@@ -251,7 +251,7 @@ public class GMCalendar: UIView {
                 leftArrowImageView.contentMode = .scaleAspectFit
             }
             
-            leftArrowImageView.widthAnchor.constraint(equalToConstant: self.headerHeight).isActive = true
+            //leftArrowImageView.widthAnchor.constraint(equalToConstant: self.headerHeight).isActive = true
             
             let leftTapGesture = UITapGestureRecognizer(target: self, action: #selector(leftArrowSelected(_:)))
             leftArrowImageView.addGestureRecognizer(leftTapGesture)
@@ -264,7 +264,7 @@ public class GMCalendar: UIView {
                 rightArrowImageView.contentMode = .scaleAspectFit
             }
             
-            rightArrowImageView.widthAnchor.constraint(equalToConstant: self.headerHeight).isActive = true
+            //rightArrowImageView.widthAnchor.constraint(equalToConstant: self.headerHeight).isActive = true
             
             let rightTapGesture = UITapGestureRecognizer(target: self, action: #selector(rightArrowSelected(_:)))
             rightArrowImageView.addGestureRecognizer(rightTapGesture)
